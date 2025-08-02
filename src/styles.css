@@ -5,7 +5,7 @@
 @import "./theme.css";
 
 body {
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   margin: 0;
   background: linear-gradient(to top right, #194c66,#112a36, #244657);

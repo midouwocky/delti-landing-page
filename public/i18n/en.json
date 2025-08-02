@@ -22,6 +22,26 @@
         "section2": {
             "title": "Schedule appointments faster",
             "description": "Delti allows you to create appointments in a few clicks. There's no need to wait on hold or spend time trying to navigate complex menus."
+        },
+        "section3": {
+            "title": "Get real time updates",
+            "description": "Receive realtime updates on the status of your appointment or queue ticket. This way, you'll never be left in the dark."
         }
+    },
+    "about": {
+        "title": "About us",
+        "description": "Welcome to DELTI, a revolutionary queue management system designed to tackle the challenges of traditional queuing systems. We are passionate about simplifying the way businesses and customers interact, making the process of booking services seamless and efficient.",
+        "reason": "At DELTI, we understand the frustration of long waiting times and the inconvenience of manually managing appointments. That’s why we have developed a comprehensive platform that empowers both businesses and customers to optimize their scheduling experience.",
+        "forBusinesses": "For Businesses: DELTI provides a user-friendly web application that allows businesses in various industries, such as barbershops, hairdressers, doctor’s offices, and dental clinics, to efficiently manage their appointments. Our platform offers advanced features like real-time updates, automated notifications, and analytics, enabling businesses to streamline their operations and enhance customer satisfaction.",
+        "forCustomers": "For Customers: With our intuitive mobile app, customers gain access to a wide range of services at their fingertips. Whether you’re looking for a haircut, a medical consultation, or a dental check-up, DELTI makes it easy to find and book appointments based on your preferred service and location. Our intelligent search algorithm ensures that you are connected with the nearest available service providers, saving you time and effort.",
+        "keyFeatures": "Key Features of DELTI:",
+        "keyFeature1": "Seamless Appointment Booking: Customers can search and book services effortlessly, selecting the desired date, time, and location.",
+        "keyFeature2": "Real-Time Notifications: Stay informed with automated notifications, including reminders and updates about your upcoming appointments.",
+        "keyFeature3": "Business Profiles: Discover detailed profiles of businesses, including their work hours, contact information, and customer reviews to make informed choices.",
+        "keyFeature4": "Easy Sharing: Share your favorite businesses with friends and family, inviting them to join the DELTI community and enjoy the convenience of our platform.",
+        "mission": "Our mission at DELTI is to transform the way businesses and customers connect, eliminating the hassle of traditional queuing systems. By leveraging the power of technology, we aim to enhance the overall customer experience, boost business productivity, and foster stronger relationships between service providers and their clients.",
+        "joinUs": "Join us on this exciting journey of reimagining queuing systems and embrace the future of efficient appointment management with DELTI.",
+        "contact": "For any inquiries or feedback, please contact us at",
+        "copyright": "DELTI, Algeria"
     }
 }
