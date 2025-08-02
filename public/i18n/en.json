@@ -1,0 +1,23 @@
+{
+    "header": {
+        "description": "No time to waste, it's DELTI",
+        "menu": {
+            "home": "Home",
+            "about": "About",
+            "contact": "Contact",
+            "privacy-policy": "Privacy Policy",
+            "terms-and-conditions": "Terms And Conditions"
+        }
+    },
+    "links": {
+        "chrome": "Coming Soon",
+        "playstore": "Coming Soon",
+        "appstore": "Coming Soon"
+    },
+    "home": {
+        "section1": {
+            "title": "Get back to the things that matter with Delti",
+            "description": "Reduce wait time, manage queues and get back to doing that matters with Delti"
+        }
+    }
+}
