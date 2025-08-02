@@ -1,7 +1,8 @@
-import { Component,PLATFORM_ID, Inject } from '@angular/core';
+import { Component,PLATFORM_ID, Inject, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LinksComponent } from '../../components/links/links.component';
 import { TranslateModule } from '@ngx-translate/core';
+declare var initWow: any;
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,8 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
-
+export class HomeComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    initWow();
+  }
 }
