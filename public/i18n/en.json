@@ -17,7 +17,11 @@
     "home": {
         "section1": {
             "title": "Get back to the things that matter with Delti",
-            "description": "Reduce wait time, manage queues and get back to doing that matters with Delti"
+            "description": "Reduce wait time, manage queues and get back to doing that matters with Delti."
+        },
+        "section2": {
+            "title": "Schedule appointments faster",
+            "description": "Delti allows you to create appointments in a few clicks. There's no need to wait on hold or spend time trying to navigate complex menus."
         }
     }
 }

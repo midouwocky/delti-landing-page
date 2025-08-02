@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,PLATFORM_ID, Inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LinksComponent } from '../../components/links/links.component';
 import { TranslateModule } from '@ngx-translate/core';
