@@ -6,13 +6,39 @@
         <img [src]="imagePath" alt="Delti Logo" class="h-fit">
       </a>
     </div>
-    <div class="flex flex-row justify-start items-center ms-4">
+    <div class="hidden md:flex flex-row justify-start items-center ms-4">
       <p class="text-white">
         {{ 'header.description' | translate }}
       </p>
     </div>
   </div>
-  <div class="">
+  <div class="md:hidden flex justify-center items-center" (appClickOutside)="closeMenu()">
+    <div class="flex items-center">
+      <button (click)="toggleMenu()" class="text-white me-8">
+        <fa-icon [icon]="faBars"></fa-icon>
+      </button>
+    </div>
+    <div [ngClass]="{'menu-open': isMenuOpen}" class="mobile-menu">
+      <ul class="flex flex-col items-center gap-4 py-4">
+        <li>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()"> {{ 'header.menu.home' | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()"> {{ 'header.menu.about' | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()"> {{ 'header.menu.contact' | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/privacy-policy" routerLinkActive="active" (click)="closeMenu()"> {{ 'header.menu.privacy-policy' | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/terms-and-conditions" routerLinkActive="active" (click)="closeMenu()"> {{ 'header.menu.terms-and-conditions' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="hidden md:flex">
     <ul id="ast-hf-menu-1" class="flex flex-row justify-end items-center gap-8 h-full me-8">
       <li>
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> {{ 'header.menu.home' | translate }}</a>
@@ -30,6 +56,5 @@
         <a routerLink="/terms-and-conditions" routerLinkActive="active"> {{ 'header.menu.terms-and-conditions' | translate }}</a>
       </li>
     </ul>
-
   </div>
 </header>

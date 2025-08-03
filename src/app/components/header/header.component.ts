@@ -2,35 +2,42 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ClickOutsideDirective } from '../../directives/click-outside.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
   imports: [
     RouterModule,
     CommonModule,
-    TranslateModule,   
+    TranslateModule,
+    ClickOutsideDirective,
+    FontAwesomeModule,
   ],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  isMobileMenuOpen = false;
+  isMenuOpen = false;
   imagePath = '';
+  faBars = faBars;
 
-  toggleMobileMenu(): void {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
-  }
-
-  closeMobileMenu(): void {
-    this.isMobileMenuOpen = false;
-  }
-
-  constructor(public translate: TranslateService ) {
-    this.translate.onLangChange.subscribe(event => {
+  constructor(public translate: TranslateService) {
+    this.translate.onLangChange.subscribe((event) => {
       this.imagePath = 'images/logo-delti-200x59.png';
       if (this.translate.currentLang === 'ar') {
         this.imagePath = 'images/logo-delti-ar.png';
       }
     });
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
   }
 }

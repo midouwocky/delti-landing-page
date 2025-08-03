@@ -1,9 +1,9 @@
 <footer class="fixed bottom-0 w-full h-20">
-  <div class="flex flex-row justify-between items-center h-full mx-10">
-    <div class="flex flex-col justify-center items-center">
+  <div class="flex flex-row justify-between items-center h-full mx-2 md:mx-10">
+    <div class="flex flex-col justify-center items-center  w-20 md:w-50">
       <p>Copyright © 2025 DELTI</p>
     </div>
-    <div class="relative">
+    <div class="relative" (appClickOutside)="closeLanguageSelector()">
       <div (click)="toggleLanguageSelector()">
         <img
           [src]="'images/i18n/' + translate.currentLang + '.svg'"
@@ -28,8 +28,8 @@
       </div>
       }
     </div>
-    <div class="flex flex-col justify-center items-center">
-      <p>Powered by Delti</p>
+    <div class="flex flex-col justify-center items-center w-20 md:w-50">
+      <p>Powered by DELTI</p>
     </div>
   </div>
 </footer>

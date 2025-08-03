@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "delti-landing-page",
+    "public": "dist/delti-website/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

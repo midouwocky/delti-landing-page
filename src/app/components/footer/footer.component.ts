@@ -1,3 +1,4 @@
+import { ClickOutsideDirective } from '../../directives/click-outside.directive';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -6,7 +7,12 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [RouterModule, TranslateModule, CommonModule],
+  imports: [
+    RouterModule,
+    TranslateModule,
+    CommonModule,
+    ClickOutsideDirective,
+  ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',
 })
@@ -18,6 +24,9 @@ export class FooterComponent {
 
   toggleLanguageSelector(): void {
     this.isLanguageSelectorOpen = !this.isLanguageSelectorOpen;
+  }
+  closeLanguageSelector(): void {
+    this.isLanguageSelectorOpen = false;
   }
 
   changeLanguage(lang: string): void {
