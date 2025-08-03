@@ -3,6 +3,31 @@
     <div class="flex flex-col justify-center items-center">
       <p>Copyright © 2025 DELTI</p>
     </div>
+    <div class="relative">
+      <div (click)="toggleLanguageSelector()">
+        <img
+          [src]="'images/i18n/' + translate.currentLang + '.svg'"
+          [alt]="translate.currentLang"
+          class="w-6 h-6 cursor-pointer"
+        />
+      </div>
+      @if (isLanguageSelectorOpen) {
+      <div
+        class="absolute bottom-full -left-2 mb-2 w-max bg-white border rounded shadow-lg"
+      >
+        @for (lang of languages; track $index) {
+        <div class="p-2 hover:bg-gray-100">
+          <img
+            [src]="'images/i18n/' + lang + '.svg'"
+            [alt]="lang"
+            class="w-6 h-6 cursor-pointer"
+            (click)="changeLanguage(lang)"
+          />
+        </div>
+        }
+      </div>
+      }
+    </div>
     <div class="flex flex-col justify-center items-center">
       <p>Powered by Delti</p>
     </div>
