@@ -1,19 +1,19 @@
 <!-- Medical Clinic Header -->
 <header class="flex flex-row justify-between fixed top-0 w-full z-50">
   <div class="flex flex-row justify-start items-center">
-    <div class="ml-8 py-4">
+    <div class="ms-8 py-4">
       <a routerLink="/">
-        <img src="images/logo-delti-200x59.png" alt="Delti Logo" class="h-fit">
+        <img [src]="imagePath" alt="Delti Logo" class="h-fit">
       </a>
     </div>
-    <div class="flex flex-row justify-start items-center ml-4">
+    <div class="flex flex-row justify-start items-center ms-4">
       <p class="text-white">
         {{ 'header.description' | translate }}
       </p>
     </div>
   </div>
   <div class="">
-    <ul id="ast-hf-menu-1" class="flex flex-row justify-end items-center gap-8 h-full mr-8">
+    <ul id="ast-hf-menu-1" class="flex flex-row justify-end items-center gap-8 h-full me-8">
       <li>
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> {{ 'header.menu.home' | translate }}</a>
       </li>

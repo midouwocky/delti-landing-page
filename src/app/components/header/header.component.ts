@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +15,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeaderComponent {
   isMobileMenuOpen = false;
+  imagePath = '';
 
   toggleMobileMenu(): void {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
@@ -22,5 +23,14 @@ export class HeaderComponent {
 
   closeMobileMenu(): void {
     this.isMobileMenuOpen = false;
+  }
+
+  constructor(public translate: TranslateService ) {
+    this.translate.onLangChange.subscribe(event => {
+      this.imagePath = 'images/logo-delti-200x59.png';
+      if (this.translate.currentLang === 'ar') {
+        this.imagePath = 'images/logo-delti-ar.png';
+      }
+    });
   }
 }
