@@ -1,0 +1,45 @@
+<div class="flex flex-col mt-30 mx-30 max-w-screen-lg mx-auto mb-25">
+    <h1 class="text-4xl font-bold text-center mb-10">{{ 'privacyPolicy.title' | translate }}</h1>
+    <div class="flex flex-row">
+        <div class="flex flex-col">
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.lastUpdated' | translate }} {{lastUpdatedDate | date:'dd.MM.yyyy'}}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.informationWeCollect' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.informationWeCollect1' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.informationWeCollect1Description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.informationWeCollect2' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.informationWeCollect2Description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.useOfInformation' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.useOfInformation1' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.useOfInformation1Description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.useOfInformation2' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.useOfInformation2Description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.informationSharing' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.informationSharing1' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.informationSharing1Description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.informationSharing2' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.informationSharing2Description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.dataSecurity' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.dataSecurityDescription' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.dataRetention' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.dataRetentionDescription' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.userRights' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.userRights1' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.userRights1Description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.userRights2' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.userRights2Description' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.thirdPartyLinks' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.thirdPartyLinksDescription' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.childrensPrivacy' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.childrensPrivacyDescription' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.changesToPolicy' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.changesToPolicyDescription' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'privacyPolicy.contact' | translate }} <a [href]="'mailto:' + contactEmail">{{ contactEmail }}</a>.</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'privacyPolicy.delti' | translate }}</p>
+        </div>
+        <div class="flex flex-col">
+            <img src="images/about/about-section.svg" alt="About Section 1" class="max-w-[600px] w-[500px] h-fit">
+            <app-links></app-links>
+        </div>
+    </div>
+</div>
