@@ -43,5 +43,17 @@
         "joinUs": "Join us on this exciting journey of reimagining queuing systems and embrace the future of efficient appointment management with DELTI.",
         "contact": "For any inquiries or feedback, please contact us at",
         "copyright": "DELTI, Algeria"
+    },
+    "contact": {
+        "title": "Contact us",
+        "description": "Thank you for your interest in Delti! We value your feedback, questions, and suggestions. Our team is here to assist you and provide the support you need. Please feel free to reach out to us using the contact information below:",
+        "form": {
+            "name": "Your Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Your Message",
+            "send": "Send Message",
+            "success": "Your message has been sent successfully!"
+        }
     }
 }

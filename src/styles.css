@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: rgba(255, 255, 255, 0.62);
+  color: #02c4b7;
   transition: color 0.1s linear;
 }
 
