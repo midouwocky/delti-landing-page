@@ -1,0 +1,62 @@
+<div class="flex flex-col mt-30 mx-30 max-w-screen-lg mx-auto mb-25">
+    <h1 class="text-4xl font-bold text-center mb-10">{{ 'termsAndConditions.title' | translate }}</h1>
+    <div class="flex flex-row">
+        <div class="flex flex-col">
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.lastUpdated' | translate }} {{lastUpdatedDate | date:'yyyy/MM/dd'}}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.description' | translate }}</p>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.jurisdictionTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.jurisdictionDescription' | translate }}</p>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.servicesTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.servicesDescription' | translate }}</p>
+            <ul class="list-disc list-inside pl-4">
+                <li class="mt-5 mb-5"><span class="font-bold">{{ 'termsAndConditions.serviceBookingTitle' | translate }}</span> {{ 'termsAndConditions.serviceBookingDescription' | translate }}</li>
+                <li class="mt-5 mb-5"><span class="font-bold">{{ 'termsAndConditions.commissionTitle' | translate }}</span> {{ 'termsAndConditions.commissionDescription' | translate }}</li>
+                <li class="mt-5 mb-5"><span class="font-bold">{{ 'termsAndConditions.commissionableActivitiesTitle' | translate }}</span> {{ 'termsAndConditions.commissionableActivitiesDescription' | translate }}</li>
+                <li class="mt-5 mb-5"><span class="font-bold">{{ 'termsAndConditions.commissionExemptionTitle' | translate }}</span> {{ 'termsAndConditions.commissionExemptionDescription' | translate }}</li>
+                <li class="mt-5 mb-5"><span class="font-bold">{{ 'termsAndConditions.paymentTitle' | translate }}</span> {{ 'termsAndConditions.paymentDescription' | translate }}</li>
+                <li class="mt-5 mb-5"><span class="font-bold">{{ 'termsAndConditions.commissionCollectionTitle' | translate }}</span> {{ 'termsAndConditions.commissionCollectionDescription' | translate }}</li>
+            </ul>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.userProfilesAndPaymentsTitle' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.customerProfilesTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.customerProfilesDescription' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.paymentProcessTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.paymentProcessDescription' | translate }}</p>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.userResponsibilitiesTitle' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.customersResponsibilitiesTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.customersResponsibilitiesDescription' | translate }}</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.businessOwnersResponsibilitiesTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.businessOwnersResponsibilitiesDescription' | translate }}</p>
+            
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.dataPrivacyTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.dataPrivacyDescription' | translate }}</p>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.intellectualPropertyTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.intellectualPropertyDescription' | translate }}</p>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.liabilityLimitationTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.liabilityLimitationDescription' | translate }}</p>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.changesToTermsTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.changesToTermsDescription' | translate }}</p>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.terminationTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.terminationDescription' | translate }}</p>
+
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.entireAgreementTitle' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.entireAgreementDescription' | translate }}</p>
+
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.acknowledgement' | translate }}</p>
+            <p class="mt-5 mb-5">{{ 'termsAndConditions.contact' | translate }} <a [href]="'mailto:' + contactEmail">{{ contactEmail }}</a>.</p>
+            <p class="mt-5 mb-5 font-bold">{{ 'termsAndConditions.company' | translate }}</p>
+
+        </div>
+        <div class="flex flex-col">
+            <img src="images/about/about-section.svg" alt="About Section 1" class="max-w-[600px] w-[500px] h-fit">
+            <app-links></app-links>
+        </div>
+    </div>
+</div>

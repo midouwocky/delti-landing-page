@@ -5,12 +5,13 @@ import { environment } from '../../../environments/environment';
 import { LinksComponent } from '../../components/links/links.component';
 
 @Component({
-  selector: 'app-privacy-policy',
-  imports: [ TranslateModule, CommonModule, LinksComponent],
-  templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.css'
+  selector: 'app-terms-and-conditions',
+  standalone: true,
+  imports: [TranslateModule, CommonModule, LinksComponent],
+  templateUrl: './terms-and-conditions.component.html',
+  styleUrl: './terms-and-conditions.component.css'
 })
-export class PrivacyPolicyComponent {
-  lastUpdatedDate = new Date('2025-08-03');
+export class TermsAndConditionsComponent {
+  lastUpdatedDate =  new Date('2025-08-03');
   contactEmail = environment.contactEmail;
 }
