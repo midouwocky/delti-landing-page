@@ -1,4 +1,4 @@
-<div class="flex flex-row justify-start items-center gap-4">
+<div class="flex flex-row justify-center items-center gap-2 md:gap-4 flex-wrap">
     <a href="#"
        class="flex flex-row justify-start items-center gap-2 animate__animated wow"
        [ngClass]="{
@@ -6,8 +6,8 @@
          'animate__backInRight': translate.currentLang === 'ar'
        }"
        data-wow-delay="0.5s">
-        <img src="images/links/chrome.png" alt="Chrome" class="w-12 h-12">
-        <p class="text-white">{{ 'links.chrome' | translate }}</p>
+        <img src="images/links/chrome.png" alt="Chrome" class="w-8 h-8 md:w-12 md:h-12">
+        <p class="text-white text-sm md:text-base">{{ 'links.chrome' | translate }}</p>
     </a>
     <a href="#"
        class="flex flex-row justify-start items-center gap-2 animate__animated wow"
@@ -16,8 +16,8 @@
          'animate__backInRight': translate.currentLang === 'ar'
        }"
        data-wow-delay="1s">
-        <img src="images/links/playstore.png" alt="Play Store" class="w-12 h-12">
-        <p class="text-white">{{ 'links.playstore' | translate }}</p>
+        <img src="images/links/playstore.png" alt="Play Store" class="w-8 h-8 md:w-12 md:h-12">
+        <p class="text-white text-sm md:text-base">{{ 'links.playstore' | translate }}</p>
     </a>
     <a href="#"
        class="flex flex-row justify-start items-center gap-2 animate__animated wow"
@@ -26,7 +26,7 @@
          'animate__backInRight': translate.currentLang === 'ar'
        }"
        data-wow-delay="1.5s">
-        <img src="images/links/appstore.png" alt="App Store" class="w-12 h-12">
-        <p class="text-white">{{ 'links.appstore' | translate }}</p>
+        <img src="images/links/appstore.png" alt="App Store" class="w-8 h-8 md:w-12 md:h-12">
+        <p class="text-white text-sm md:text-base">{{ 'links.appstore' | translate }}</p>
     </a>
 </div>
