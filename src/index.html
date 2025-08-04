@@ -10,8 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+
 </head>
 <body>
   <app-root></app-root>
+  <script>
+    // This function will be called by the reCAPTCHA script when it's fully loaded.
+    // It will trigger an event that your Angular component can listen to.
+    function onRecaptchaLoad() {
+      // Dispatch a custom event to notify Angular that reCAPTCHA is ready
+      window.dispatchEvent(new Event('recaptchaLoad'));
+    }
+  </script>
 </body>
 </html>

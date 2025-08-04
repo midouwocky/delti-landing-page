@@ -48,6 +48,7 @@
                     <label for="message" class="block mb-2">{{ 'contact.form.message' | translate }}</label>
                     <textarea id="message" name="message" formControlName="message" class="w-full p-2 border rounded" rows="4"></textarea>
                 </div>
+                <div #recaptchaContainer></div>
                 <button type="submit" [disabled]="contactForm.invalid" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 disabled:bg-gray-400">{{ 'contact.form.send' | translate }}</button>
             </form>
             <app-links></app-links>
